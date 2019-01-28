@@ -1,0 +1,171 @@
+body {
+    padding-top: 50px;
+    background: url("https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/583c12ce9c986.gif")  round ;
+    color: white;
+    position: relative;
+    height: 100vh;
+}
+
+iframe {
+    display:none;
+}
+
+
+.intro {
+
+    
+    animation: intro 5s ease-out 1s;
+    color: rgb(75, 213, 238);
+    font-weight: 400;
+    font-size: 300%;
+    opacity: 0;
+
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+h1 {
+    text-align: justify;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+
+
+}
+
+#becode {   
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: auto;
+    animation: becode 7s ease-out 7s;
+    opacity: 0;
+}
+
+
+
+@keyframes becode {
+    0% {
+        width: 18em;
+        transform: rotate(0deg) translate(-50%, -50%) scale(2.75);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        width: 18em;      
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(720deg) translate(-50%, -50%) scale(0.1);
+        width: 18em;        
+    }
+
+}
+
+#starlogo {   
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: auto;
+    animation: starlogo 7s ease-out 7s;
+    opacity: 0;
+}
+
+#starlogo {
+    width: inherit;
+}
+
+
+@keyframes starlogo {
+    0% {
+        width: 18em;
+        transform: rotate(0deg) translate(-50%, -50%) scale(2.75);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        width: 18em;      
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(-720deg) translate(-50%, -50%) scale(0.1);
+        width: 18em;        
+    }
+
+}
+
+p {
+  color: #FFFF82;
+}
+
+/* Set the font, lean the board, position it */
+#board {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  transform: perspective(300px) rotateX(25deg);
+  transform-origin: 50% 100%;
+  text-align: justify;
+  position: absolute;
+  margin-left: -9em;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 350%;
+  height: 50em;
+  width: 18em;
+  bottom: 0;
+  left: 50%;
+}
+
+#board:after {
+  position: absolute;
+  content: ' ';
+  bottom: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* Set the scrolling animation and position it */
+#content {
+  animation: scroll 50s linear 14s;
+  position: absolute;
+  top: 100%;
+}
+
+#title, #subtitle {
+  text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -170%;
+    }
+}
